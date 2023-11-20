@@ -7,6 +7,8 @@ public class Main {
     
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
+		StringBuilder sb = new StringBuilder();
+        
 		int N = Integer.parseInt(br.readLine());
 		int[] arr = new int[N];
 		
@@ -26,8 +28,8 @@ public class Main {
 		}
 		
 		for(int val : arr) {
-			System.out.println(val);
+			sb.append(val).append('\n');
 		}
- 
+		System.out.println(sb);
 	}
 }
